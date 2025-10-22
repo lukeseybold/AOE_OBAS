@@ -1,0 +1,19 @@
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 7.0.0
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\Luke\Documents\GitHub\Seybold-MASc\Software\Models\AOE_OBAS\hydroData 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('simulationClass/checkInputs', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\objects\simulationClass.m', 130)" style="font-weight:bold">simulationClass/checkInputs</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\objects\simulationClass.m',130,0)">line 130</a>)
+The simMechanics file, C:\Users\Luke\Documents\GitHub\Seybold-MASc\Software\Models\AOE_OBAS\hydroData\AOE_1Device.slx, does not exist in the case directory
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m', 84)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\functions\initializeWecSim.m',84,0)">line 84</a>)
+simu.checkInputs();
+^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 39)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',39,0)">line 39</a>)
+run('initializeWecSim');
+^^^^^^^^^^^^^^^^^^^^^^^
+} 
+wecSim
