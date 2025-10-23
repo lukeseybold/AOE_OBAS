@@ -1,7 +1,7 @@
 # AOE_OBAS
 Model of the Accumulated Ocean Energy Ocean Buoy Array System
 
-1device:    One point absorber device and thermodynamic PTO model
+1device:    One point absorber device and thermodynamic PTO model <br>
 Array:      Three cascading point absorbers and their thermodynamic PTO models   
 
     WEC-Sim:    Simulink model of the OBAS WECs and PTO systems
