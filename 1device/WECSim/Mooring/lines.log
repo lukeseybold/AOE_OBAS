@@ -1,0 +1,146 @@
+MoorDyn v2 log file with output level MSG at 'Mooring/lines.log'
+Generated entities:
+	nLineTypes  = 1
+	nRodTypes   = 0
+	nPoints     = 9
+	nBodies     = 1
+	nRods       = 0
+	nLines      = 6
+	nFails      = 0
+	nFreeBodies = 0
+	nFreeRods   = 0
+	nFreePoints  = 3
+	nCpldBodies = 1
+	nCpldRods   = 0
+	nCpldPoints = 0
+Time integrator = 2nd order Runge-Kutta
+Water kinematics for IC gen:
+   No Waves or Currents, or set externally
+Creating mooring system...
+Initializing coupled Body 1 at 0, 0, -8.044...
+dtM = 0.0005 s (CFL = 0.0214037)
+Finalizing ICs using static solve
+  - Line1:
+    ID      : 1
+    UnstrLen: 240
+    N       : 15
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 1 damping set to 2.13086e+08 Pa-s = 3.47032e+06 Ns, based on input of -0.8
+Initialized Line 1
+  - Line2:
+    ID      : 2
+    UnstrLen: 240
+    N       : 15
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 2 damping set to 2.13086e+08 Pa-s = 3.47032e+06 Ns, based on input of -0.8
+Initialized Line 2
+  - Line3:
+    ID      : 3
+    UnstrLen: 240
+    N       : 15
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 3 damping set to 2.13086e+08 Pa-s = 3.47032e+06 Ns, based on input of -0.8
+Initialized Line 3
+  - Line4:
+    ID      : 4
+    UnstrLen: 40
+    N       : 5
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 4 damping set to 1.06543e+08 Pa-s = 1.73516e+06 Ns, based on input of -0.8
+Initialized Line 4
+  - Line5:
+    ID      : 5
+    UnstrLen: 40
+    N       : 5
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 5 damping set to 1.06543e+08 Pa-s = 1.73516e+06 Ns, based on input of -0.8
+Initialized Line 5
+  - Line6:
+    ID      : 6
+    UnstrLen: 40
+    N       : 5
+    d       : 0.144
+    rho     : 7736.7
+    EAMod   : 1
+    EA      : 5.83376e+08
+    BA      : -0.8
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.6
+    Cdt     : 0.05
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 1072.3
+Line 6 damping set to 1.06543e+08 Pa-s = 1.73516e+06 Ns, based on input of -0.8
+Initialized Line 6
+Remaining error after 2 s = 2.78205 m/s2
+Best score at 1 s = 2.7817 m/s2
+Water kinematics for runtime:
+   No Waves or Currents, or set externally
