@@ -29,7 +29,7 @@ simu.dt = 0.002; 							% Simulation time-step [s]
 
 % % Regular Waves  
 waves = waveClass('regular');             % Initialize Wave Class and Specify Type                                 
-waves.height = 2.5;                         % Wave Height [m]
+waves.height = 0.5;                         % Wave Height [m]
 waves.period = 8;                        % Wave Period [s]
 
 % % Regular Waves with CIC
@@ -109,7 +109,8 @@ pto(1).location = [0 0 0];                      % PTO Location [m]
 % Moordyn
 mooring(1) = mooringClass('mooring');           % Initialize mooringClass
 mooring(1).moorDyn = 1;                         % Initialize MoorDyn                                                                    
-mooring(1).moorDynLines = 6;                    % Specify number of lines
-mooring(1).moorDynNodes(1:3) = 16;              % Specify number of nodes per line
-mooring(1).moorDynNodes(4:6) = 6;               % Specify number of nodes per line
+mooring(1).moorDynLines = 3;                    % Specify number of lines
+mooring(1).moorDynNodes = 8;              % Specify number of nodes per line
+% mooring(1).moorDynNodes(1:3) = 6;              % Specify number of nodes per line
+% mooring(1).moorDynNodes(4:6) = 16;               % Specify number of nodes per line
 mooring(1).initial.displacement = [0 0 -8.044]; % Initial Displacement (body cg + body initial displacement)

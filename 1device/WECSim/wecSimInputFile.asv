@@ -19,7 +19,7 @@ simu.mode = 'normal';                   % Specify Simulation Mode ('normal','acc
 simu.explorer = 'on';                   % Turn SimMechanics Explorer (on/off)
 simu.startTime = 0;                     % Simulation Start Time [s]
 simu.rampTime = 100;                    % Wave Ramp Time [s]
-simu.endTime = 300;                     % Simulation End Time [s]
+simu.endTime = 200;                     % Simulation End Time [s]
 simu.solver = 'ode4';                   % simu.solver = 'ode4' for fixed step & simu.solver = 'ode45' for variable step 
 simu.dt = 0.002; 							% Simulation time-step [s]
 
@@ -99,8 +99,17 @@ pto(1).damping = 0; %1200000;                   % PTO Damping [N/(m/s)]
 pto(1).location = [0 0 0];                      % PTO Location [m]
 
 %% Mooring
+% % Mooring Matrix
+% mooring(1) = mooringClass('mooring');               % Initialize mooringClass
+% mooring(1).matrix.stiffness = zeros(6,6);
+% mooring(1).matrix.stiffness(1,1) = 1e5;
+% mooring(1).matrix.damping = zeros(6,6);
+% mooring(1).matrix.preTension = zeros(1,6);
+
 % Moordyn
 mooring(1) = mooringClass('mooring');           % Initialize mooringClass
-mooring(i).matrix.stiffness = [6x6]
-mooring(i).matrix.damping = [6x6]
-mooring(i).matrix.preTension = [6x6]
+mooring(1).moorDyn = 1;                         % Initialize MoorDyn                                                                    
+mooring(1).moorDynLines = 3;                    % Specify number of lines
+% mooring(1).moorDynNodes(1:3) = 6;              % Specify number of nodes per line
+% mooring(1).moorDynNodes(4:6) = 16;               % Specify number of nodes per line
+mooring(1).initial.displacement = [0 0 -8.044]; % Initial Displacement (body cg + body initial displacement)
