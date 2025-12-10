@@ -1,0 +1,40 @@
+--------------------- MoorDyn Input File ------------------------------------
+BEMRosetta generated basic mooring file
+FALSE    Echo      - echo the input file data (flag)
+----------------------- LINE TYPES ------------------------------------------
+     Name      Diam   MassDen       EA       BA/-zeta  EI     Cd     Ca     CdAx   CaAx 
+     (-)       (m)    (kg/m)        (N)      (N-s/-)   (-)    (-)    (-)    (-)    (-)  
+   Polymer     0.0500      1.4         5.2e7    40000    0.0 1.3325    1.0 0.2032    0.5
+    Chain      0.0457     12.7        6.56e8   640000    0.0 1.3325    1.0 0.2032    0.5
+----------------------- POINTS ----------------------------------------------
+ ID    Type        X            Y            Z         M      V     CdA    CA   
+ (-)   (-)        (m)          (m)          (m)       (kg)  (m^3)  (m^2)   (-)  
+   1  Body1         5.0000       0.0000      -3.6000    0.0    0.0    0.0    0.0
+   2   Free        15.0000       0.0000     -50.0000    0.0    0.0    0.0    0.0
+   3  Fixed        35.0000       0.0000     -50.0000    0.0    0.0    0.0    0.0
+   4  Body1        -2.5000       4.3300      -3.6000    0.0    0.0    0.0    0.0
+   5   Free        -7.5000      12.3000     -50.0000    0.0    0.0    0.0    0.0
+   6  Fixed       -17.5000      32.5000     -50.0000    0.0    0.0    0.0    0.0
+   7  Body1        -2.5000      -4.3300      -3.6000    0.0    0.0    0.0    0.0
+   8   Free        -7.5000     -12.3000     -50.0000    0.0    0.0    0.0    0.0
+   9  Fixed       -17.5000     -32.5000     -50.0000    0.0    0.0    0.0    0.0
+----------------------- LINES -----------------------------------------------
+ ID    LineType   AttachA  AttachB    UnstrLen   NumSegs  Outputs 
+ (-)    (name)      (#)      (#)         (m)       (-)      (-)   
+   1   Polymer           2        1       47.465        5        -
+   2    Chain            2        3       20.000        2        -
+   3   Polymer           5        4       47.344        5        -
+   4    Chain            5        6       22.540        2        -
+   5   Polymer           8        7       47.344        5        -
+   6    Chain            8        9       22.540        2        -
+---------------------- SOLVER OPTIONS ---------------------------------------
+0.0005                 dtM        - time step to use in mooring integration (s). In case of NaNs reduce < 0.001, although slows down speed
+3.0e+06                kbot       - bottom stiffness (Pa/m)
+3.0e+05                cbot       - bottom damping (Pa-s/m)
+1.0                    dtIC       - time interval for analyzing convergence during IC gen (s)
+200.0                  TmaxIC     - max time for ic gen (s)
+5.0                    CdScaleIC  - factor by which to scale drag coefficients during dynamic relaxation (-)
+0.001                  threshIC   - threshold for IC convergence (-)
+50.0                   WtrDpth    - water depth (m)
+0                      OutSwitch  - enable .MD output (0/1)
+------------------------- need this line ------------------------------------

@@ -1,0 +1,144 @@
+MoorDyn v2 log file with output level MSG at 'Mooring/lines.log'
+Generated entities:
+	nLineTypes  = 2
+	nRodTypes   = 0
+	nPoints     = 9
+	nBodies     = 1
+	nRods       = 0
+	nLines      = 6
+	nFails      = 0
+	nFreeBodies = 0
+	nFreeRods   = 0
+	nFreePoints  = 3
+	nCpldBodies = 1
+	nCpldRods   = 0
+	nCpldPoints = 0
+Time integrator = 2nd order Runge-Kutta
+Water kinematics for IC gen:
+   No Waves or Currents, or set externally
+Creating mooring system...
+Initializing coupled Body 1 at 0, 0, -13...
+dtM = 0.0005 s (CFL = 0.0685477)
+Finalizing ICs using static solve
+  - Line1:
+    ID      : 1
+    UnstrLen: 35.25
+    N       : 5
+    d       : 0.05
+    rho     : 718.107
+    EAMod   : 1
+    EA      : 5.2e+07
+    BA      : 40000
+    EI      : 8000
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.5
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : -5.91134
+WRN D:\a\MoorDyn\MoorDyn\source\Line.cpp:584 moordyn::Line::initialize(): Catenary initial profile failed for Line 1, initalizing as linear 
+Initialized Line 1
+  - Line2:
+    ID      : 2
+    UnstrLen: 20
+    N       : 2
+    d       : 0.0457
+    rho     : 7724.21
+    EAMod   : 1
+    EA      : 6.56e+08
+    BA      : 640000
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 2.2
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 107.799
+WRN D:\a\MoorDyn\MoorDyn\source\Line.cpp:584 moordyn::Line::initialize(): Catenary initial profile failed for Line 2, initalizing as linear 
+Initialized Line 2
+  - Line3:
+    ID      : 3
+    UnstrLen: 35.25
+    N       : 5
+    d       : 0.05
+    rho     : 718.107
+    EAMod   : 1
+    EA      : 5.2e+07
+    BA      : 40000
+    EI      : 8000
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.5
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : -5.91134
+WRN D:\a\MoorDyn\MoorDyn\source\Line.cpp:584 moordyn::Line::initialize(): Catenary initial profile failed for Line 3, initalizing as linear 
+Initialized Line 3
+  - Line4:
+    ID      : 4
+    UnstrLen: 20
+    N       : 2
+    d       : 0.0457
+    rho     : 7724.21
+    EAMod   : 1
+    EA      : 6.56e+08
+    BA      : 640000
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 2.2
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 107.799
+Initialized Line 4
+  - Line5:
+    ID      : 5
+    UnstrLen: 35.25
+    N       : 5
+    d       : 0.05
+    rho     : 718.107
+    EAMod   : 1
+    EA      : 5.2e+07
+    BA      : 40000
+    EI      : 8000
+    Can     : 1
+    Cat     : 0
+    Cdn     : 1.5
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : -5.91134
+WRN D:\a\MoorDyn\MoorDyn\source\Line.cpp:584 moordyn::Line::initialize(): Catenary initial profile failed for Line 5, initalizing as linear 
+Initialized Line 5
+  - Line6:
+    ID      : 6
+    UnstrLen: 20
+    N       : 2
+    d       : 0.0457
+    rho     : 7724.21
+    EAMod   : 1
+    EA      : 6.56e+08
+    BA      : 640000
+    EI      : 0
+    Can     : 1
+    Cat     : 0
+    Cdn     : 2.2
+    Cdt     : 0
+    Cl      : 0
+    dF      : 0
+    cF      : 0
+    ww_l    : 107.799
+Initialized Line 6
+Remaining error after 72 s = 0.322038 m/s2
+Best score at 72 s = 0.322038 m/s2
+Water kinematics for runtime:
+   No Waves or Currents, or set externally
