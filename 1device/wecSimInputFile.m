@@ -1,7 +1,6 @@
 close all
 
 %% PTO Data
-% Optimal Design - 12 April 2018 ("Y:\primed\Projects\P1820E_AOECAN\7-Software\Base Line Models\AOE_ORG")
 inputs.CylDiam1 = 2.3771;
 inputs.CylLength1 = 2.9850 ;
 inputs.CylDiam2 = 1.8148;
@@ -78,25 +77,22 @@ waves.period = 8;                         % Wave Period [s]
 % waves.elevationFile = 'elevationData.mat';     % Name of User-Defined Time-Series File [:,2] = [time, eta]
 
 %% Body Data ("Y:\primed\Projects\P1922E_AOECAN\7-Software\ini_files1")
-% Float ("\Float.ini")
+% Float
 body(1) = bodyClass('hydroData/AOE_WEC.h5');      
     % Create the body(1) Variable, Set Location of Hydrodynamic Data File 
     % and Body Number Within this File.   
 body(1).geometryFile = 'geometry/float_geometry.STL';    % Location of Geometry File
 body(1).nonlinearHydro = 0;
-body(1).mass = 'equilibrium';
-% body(1).mass = 33384; % This doesn't work                 
-    % Body Mass. The 'equilibrium' Option Sets it to the Displaced Water 
-    % Weight.
-body(1).inertia = [280400.48 280400.48 488067.73]; % using Solidworks Cg = 0 m from origin (0.803 m from waterplane) [1041149 1041149 2145160];  % Moment of Inertia [kg*m^2]
+body(1).mass = 'equilibrium';                            % Body Mass. The 'equilibrium' Option Sets it to the Displaced Water Weight.
+body(1).inertia = [280400.48 280400.48 488067.73];
 
-% Spar/Plate ("\AOEStruct.ini")
+% Spar/Plate
 body(2) = bodyClass('hydroData/AOE_WEC.h5'); 
 body(2).geometryFile = 'geometry/spar_geometry.STL'; 
 body(2).nonlinearHydro = 0;
 body(2).mass = 'equilibrium';
-% body(2).mass = 167985; %This doesn't work
-body(2).inertia = [27460364.88 27460919.49 1243536.41]; % [14597859 14597859 998029]; %(Thacher) [1337485 1337485 1088425]; % using SolidWorks Cg = -14.65 m from waterplane 
+
+body(2).inertia = [27460364.88 27460919.49 1243536.41];
 
 %% PTO and Constraint Parameters
 % Translational Joint
@@ -106,6 +102,5 @@ constraint(1).location = [0 0 0];               % Constraint Location [m]
 % Translational PTO
 pto(1) = ptoClass('PTO1');                      % Initialize PTO Class for PTO1
 pto(1).stiffness = 0;                           % PTO Stiffness [N/m]
-% pto(1).damping = 1200000;                   % PTO Damping [N/(m/s)]
 pto(1).damping = 0;
 pto(1).location = [0 0 0];                      % PTO Location [m]
