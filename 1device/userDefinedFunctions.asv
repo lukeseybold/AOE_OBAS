@@ -1,0 +1,137 @@
+%% PTO Data
+% Optimal Design - 12 April 2018 ("Y:\primed\Projects\P1820E_AOECAN\7-Software\Base Line Models\AOE_ORG")
+inputs.CylDiam1 = 2.3771;
+%inputs.CylLength1 = 2.9850 ;
+inputs.CylDiam2 = 1.8148;
+inputs.CylLength2 = 2.7098 ;
+inputs.CylDiam3 = 1.5734;
+inputs.CylLength3 = 3.8491 ;
+inputs.Pressure = 8.000e+05; % 1.03e+05; % allows calculation of exergy by exhausting air to atm 
+inputs.OrificeRatio = 0.2447;
+
+% Recompute AOE struct and push it to base workspace
+AOE = Constants_1Device(inputs);
+
+%% Batch Run WEC-Sim Simulations for Varying Cylinder Lengths
+
+% --- User Settings ---
+cylLengths = 2:0.5:4.5;   % Cylinder lengths [m]
+resultsFolder = 'C:\Users\Luke\Documents\MATLAB\WECsim_Results';  % Change as needed
+
+% --- Create folder if it doesn't exist ---
+if ~exist(resultsFolder, 'dir')
+    mkdir(resultsFolder);
+end
+
+% --- Prepare for storing results ---
+results = struct();
+
+% --- Run Simulations ---
+for n = 1:length(cylLengths)
+    inputs.CylLength1 = cylLengths(n);
+    fprintf('Running WEC-Sim with CylLength1 = %.2f m...\n', inputs.CylLength1);
+
+    % Run the WEC-Sim model
+    wecSim;  % assumes wecSimInputFile.m is configured correctly
+
+    % Extract signals from workspace (each is a 100001x2 double)
+    results(n).CylLength1 = inputs.CylLength1;
+    results(n).Fstop_High.Time = Fstop_High(:,1);
+    results(n).Fstop_High.Data = Fstop_High(:,2);
+    results(n).Fstop_Low.Time  = Fstop_Low(:,1);
+    results(n).Fstop_Low.Data  = Fstop_Low(:,2);
+    results(n).P_T.Time        = P_T(:,1);
+    results(n).P_T.Data        = P_T(:,2);
+
+    fprintf('Completed run %d of %d\n', n, length(cylLengths));
+end
+
+%% --- Plot Results ---
+figure('Name','High Endstop Force','NumberTitle','off');
+hold on; grid on;
+for n = 1:length(results)
+    plot(results(n).Fstop_High.Time, results(n).Fstop_High.Data, ...
+         'DisplayName', sprintf('Cylinder Length = %.1f m', results(n).CylLength1));
+end
+xlabel('Time [s]'); ylabel('Force [N]');
+title('High Endstop Force');
+legend show;
+
+figure('Name','Low Endstop Force','NumberTitle','off');
+hold on; grid on;
+for n = 1:length(results)
+    plot(results(n).Fstop_Low.Time, results(n).Fstop_Low.Data, ...
+         'DisplayName', sprintf('Cylinder Length = %.1f m', results(n).CylLength1));
+end
+xlabel('Time [s]'); ylabel('Force [N]');
+title('Low Endstop Force');
+legend show;
+
+figure('Name','Tank Pressure','NumberTitle','off');
+hold on; grid on;
+for n = 1:length(results)
+    plot(results(n).P_T.Time, results(n).P_T.Data, ...
+         'DisplayName', sprintf('Cylinder Length = %.1f m', results(n).CylLength1));
+end
+xlabel('Time [s]'); ylabel('Pressure [Pa]');
+title('Tank Pressure');
+legend show;
+
+%% --- Save Results ---
+timestamp = datestr(now, 'yyyymmdd_HHMMSS');
+saveFileName = fullfile(resultsFolder, ['results_' timestamp '.mat']);
+save(saveFileName, 'results');
+
+fprintf('\nAll simulations complete. Results saved to:\n%s\n', saveFileName);
+
+% --- Optional: save figures automatically ---
+%{
+figHandles = findall(0, 'Type', 'figure');
+for k = 1:length(figHandles)
+    figName = get(figHandles(k), 'Name');
+    if isempty(figName)
+        figName = sprintf('Figure%d', k);
+    end
+    exportgraphics(figHandles(k), fullfile(resultsFolder, ...
+        sprintf('%s_%s.png', figName, timestamp)));
+end
+fprintf('Figures saved as PNGs in:\n%s\n', resultsFolder);
+%}
+
+
+%Example of user input MATLAB file for post processing
+
+%Plot waves
+waves.plotElevation(simu.rampTime);
+try 
+    waves.plotSpectrum();
+catch
+end
+
+%Plot heave response for body 1
+output.plotResponse(1,3);
+
+%Plot heave response for body 2
+output.plotResponse(2,3);
+
+%Plot heave forces for body 1
+output.plotForces(1,3);
+
+%Plot heave forces for body 2
+output.plotForces(2,3);
+
+% Save waves and response as video
+% output.saveViz(simu,body,waves,...
+%     'timesPerFrame',5,'axisLimits',[-150 150 -150 150 -50 20],...
+%     'startEndTime',[100 125]);
+
+
+% %Plot fairlead tensions from MoorDyn
+% figure()
+% plot(output.moorDyn.Lines.Time, output.moorDyn.Lines.FairTen1)
+% hold on
+% plot(output.moorDyn.Lines.Time, output.moorDyn.Lines.FairTen3,'--')
+% plot(output.moorDyn.Lines.Time, output.moorDyn.Lines.FairTen5,'-.')
+% xlabel('Time (s)')
+% ylabel('Fairlead Tension (N)')
+% legend('Cable 1', 'Cable 2', 'Cable 3')

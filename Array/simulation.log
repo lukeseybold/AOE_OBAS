@@ -1,0 +1,260 @@
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 7.0.0
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\Luke\Documents\GitHub\AOE_OBAS\WEC-Sim 
+
+WEC-Sim Pre-processing ...   
+	Infinite water depth specified in BEM and "waves.waterDepth" not specified in input file.
+Set water depth to 200m for visualization.
+Elapsed time is 0.208570 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 200
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 100
+	 Number of Time Steps     = 20000 
+
+Wave Environment: 
+	Wave Type                            = No Wave (Constant Hydrodynamic Coefficients)
+	Hydro Data Wave Period, period (sec)    	= 8
+
+List of Body:
+ 
+Number of Hydro Bodies = 6 
+
+	***** Body Number 1, Name: float1 *****
+	Body CG                          (m) = [-0,0,0.803]
+	Body Mass                       (kg) = 31827.3 
+	Body Moments of Inertia       (kgm2) = [280400,280400,488068]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+	***** Body Number 2, Name: spar1 *****
+	Body CG                          (m) = [3.4E-05,0.00162,-11.4615]
+	Body Mass                       (kg) = 162753 
+	Body Moments of Inertia       (kgm2) = [2.74604E+07,2.74609E+07,1.24354E+06]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+	***** Body Number 3, Name: float2 *****
+	Body CG                          (m) = [70,0,0.803]
+	Body Mass                       (kg) = 31827.3 
+	Body Moments of Inertia       (kgm2) = [280400,280400,488068]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+	***** Body Number 4, Name: spar2 *****
+	Body CG                          (m) = [70,0.00162,-11.4615]
+	Body Mass                       (kg) = 162753 
+	Body Moments of Inertia       (kgm2) = [2.74604E+07,2.74609E+07,1.24354E+06]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+	***** Body Number 5, Name: float3 *****
+	Body CG                          (m) = [140,0,0.803]
+	Body Mass                       (kg) = 31827.3 
+	Body Moments of Inertia       (kgm2) = [280400,280400,488068]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+	***** Body Number 6, Name: spar3 *****
+	Body CG                          (m) = [140,0.00162,-11.4615]
+	Body Mass                       (kg) = 162753 
+	Body Moments of Inertia       (kgm2) = [2.74604E+07,2.74609E+07,1.24354E+06]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 3 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+	***** PTO Name: PTO2 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+	***** PTO Name: PTO3 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): Number of Constraints = 3 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+	***** Constraint Name: Constraint3 *****
+
+Elapsed time is 0.118614 seconds.
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\Luke\Documents\GitHub\AOE_OBAS\WEC-Sim\AOE_OBAS.slx...   
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1
+Box Unit1</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1
+Box Unit1</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1
+Box Unit1</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit1','error')">AOE_OBAS/Temperature Chamber1  Box Unit1</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1
+Box Unit2</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1
+Box Unit2</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1
+Box Unit2</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit2','error')">AOE_OBAS/Temperature Chamber1  Box Unit2</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1
+Box Unit3</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1
+Box Unit3</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1
+Box Unit3</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>' does not have direct feedthrough
+    to any output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Temperature Chamber1  Box Unit3','error')">AOE_OBAS/Temperature Chamber1  Box Unit3</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box
+Unit1</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit1','error')">AOE_OBAS/Volume Chamber1  Box Unit1</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box
+Unit2</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit2','error')">AOE_OBAS/Volume Chamber1  Box Unit2</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box
+Unit3</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber1  Box Unit3','error')">AOE_OBAS/Volume Chamber1  Box Unit3</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box
+Unit1</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit1','error')">AOE_OBAS/Volume Chamber2  Box Unit1</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box
+Unit2</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit2','error')">AOE_OBAS/Volume Chamber2  Box Unit2</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+[Warning: Subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>' contains a direct feedthrough path from input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box
+Unit3</a>' to one or more subsystem output ports that prevents the software from removing artificial algebraic loops that involve subsystem
+'<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>'.
+Suggested Actions:
+    • To resolve this warning by enabling the software to remove the artificial algebraic loop, modify the contents of subsystem
+    '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>' such that input port '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>' does not have direct feedthrough to any
+    output ports of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>'.
+    • To eliminate this warning without modifying the contents of the subsystem, clear the 'Minimize artificial algebraic loop occurrences'
+    parameter of subsystem '<a href="matlab:open_and_hilite_hyperlink ('AOE_OBAS/Volume Chamber2  Box Unit3','error')">AOE_OBAS/Volume Chamber2  Box Unit3</a>'.
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)
+['AOE_OBAS/Global Reference Frame/Solver Configuration']: Error evaluating equations at time 0.0. Stopping simulation. There may be a
+singularity in the solution. If not, try reducing the step size (either by reducing the fixed step size or by tightening the error tolerances)
+Caused by:
+    Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m', 42)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\Luke\Documents\GitHub\WEC-Sim\source\wecSim.m',42,0)">line 42</a>)
+    ['AOE_OBAS/Floating (6DOF)/CONSTRAINT (Bushing Joint)']: 'AOE_OBAS/Floating (6DOF)/CONSTRAINT (Bushing Joint)' has a degenerate mass
+    distribution on its follower side.
+} 
